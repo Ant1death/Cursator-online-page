@@ -1,0 +1,81 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 21px
+.list__wrapper
+    &-ul
+        display: flex
+        align-items: center
+    &-item
+        text-decoration: none
+        list-style-type: none
+        margin-right: 43px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 142.5%
+        color: #000000
+        cursor: pointer 
+        text-decoration: none
+        list-style-type: none
+        >a
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 142.5%
+            color: #000000
+            cursor: pointer 
+            text-decoration: none
+            list-style-type: none
+        &:nth-last-child(1)
+            margin-right: 0
+.btn-course
+    width: 164px
+    height: 52px
+    border: 1px solid #0075FF
+    border-radius: 70px
+    background-color: #ffff
+.logo
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 68px
+    color: #000000
+.select-language
+    background: #EEEDEB
+    border-radius: 4px
+    >option
+        background: #FFFFFF
+.path
+    margin-top: 40px
+    &__wrapper
+        &-item
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 142.5%
+            color: #000000
+            margin-right: 24px
+            position: relative
+            &:nth-last-child(1)
+                color: #0075FF
+            &::after
+                position: absolute
+                display: block
+                content: ''
+                width: 4px
+                height: 4px
+                transform: rotate(-45deg)
+                right: -15px
+                top: 5px
+                border: solid black
+                border-width: 0 3px 3px 0
+                &:nth-last-child(1)
+                    display: none
+                    
+                
