@@ -20,12 +20,16 @@
                             <li class="list__wrapper-item"><a href="#">Акции</a> </li>
                             <li class="list__wrapper-item"><a href="#">Отзывы</a> </li>
                             <li class="list__wrapper-item"><a href="#">Блог</a> </li>
-                            <select class="list__wrapper-item select-language">
-                                <option value="1"> <img src="assets/icon/en-flag.svg" alt="EN"> EN</option>
-                                <option value="1"> <img src="assets/icon/ru-flag.svg" alt="RU"> RU</option>
-                            </select>
+                            <li class="list__wrapper-item" id="language">
+                                <a href="#">RU</a> 
+                            </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 
             </div>
@@ -111,8 +115,10 @@
                         
                     </div>
                 </div>
+                
             </div>
         </div>
+        <!-- <div class="promo__circle"></div> -->
     </section>
     <section class="about">
         <div class="navigation__btnwrapper">
@@ -124,7 +130,7 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__wrapper-item">
-                    <h2 class="about__title">О курсе: "Профессия Fullstack-разработчик
+                    <h2 class="about__title title-fz28">О курсе: "Профессия Fullstack-разработчик
                         на JavaScript" от SkillFactory</h2>
                     <p>С помощью курса вы углубитесь в разработку на Java и научитесь создавать микросервисную архитектуру приложений, познакомитесь со стандартами корпоративной разработки, освоите Spring, Maven и другие инструменты.
                         <br>
@@ -167,7 +173,7 @@
                         <div class="start__wrapper-item">Начало</div>
                         <div class="start__wrapper-item">Длительность</div>
                         <div class="start__wrapper-item">Занятия</div>
-                        <div class="start__wrapper-item">После обучения</div>
+                        <div class="start__wrapper-item" id="after-study">После обучения</div>
                         <div class="start__wrapper-item">Для кого</div>
                         <div class="start__wrapper-item">Школа</div>
                     </div>
@@ -186,12 +192,12 @@
                     <div class="format__item">Особенности</div>
                     <div class="format__item-text">проверка домашних заданий и проектов, обратная связь от наставника, высокоинтенсивный формат обучения</div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
     <section class="reviews">
         <div class="container">
-            <h2 class="reviews__title">Отзывы учеников курса Fullstack-разработчик на JavaScript</h2>
+            <h2 class="reviews__title title-fz28">Отзывы учеников курса Fullstack-разработчик на JavaScript</h2>
             <div class="feedback">
                 <div class="feedback__user">
                     <div class="user-circle">
@@ -227,6 +233,14 @@
                         <br>
                         <br>
                         В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                    </div>
+                    <div class="like__wrapper like__wrapper-mobile">
+                        <button class="like__wrapper-like">
+                            <img src="assets/icon/like.svg" alt="like">
+                        </button>
+                        <button class="like__wrapper-dislike">
+                            <img src="assets/icon/Dislike.svg" alt="like">
+                        </button>
                     </div>
                     <div class="proscons__wrapper">
                         <div class="proscons__wrapper-item">
@@ -271,16 +285,15 @@
                         <span class="feedback__current">4.2</span>
                         <span class="feedback__max">из 5.0</span>
                     </div>
-                    </div>
-                    
-                    <div class="like__wrapper">
-                        <button class="like__wrapper-like">
-                            <img src="assets/icon/like.svg" alt="like">
-                        </button>
-                        <button class="like__wrapper-dislike">
-                            <img src="assets/icon/Dislike.svg" alt="like">
-                        </button>
-                    </div>
+                </div>
+                <div class="like__wrapper">
+                    <button class="like__wrapper-like">
+                        <img src="assets/icon/like.svg" alt="like">
+                    </button>
+                    <button class="like__wrapper-dislike">
+                        <img src="assets/icon/Dislike.svg" alt="like">
+                    </button>
+                </div>
                 </div>
                 <div class="feedback__about">
                     <div class="user__wrapper">
@@ -295,6 +308,14 @@
                         <br>
                         <br>
                         В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                    </div>
+                    <div class="like__wrapper like__wrapper-mobile">
+                        <button class="like__wrapper-like">
+                            <img src="assets/icon/like.svg" alt="like">
+                        </button>
+                        <button class="like__wrapper-dislike">
+                            <img src="assets/icon/Dislike.svg" alt="like">
+                        </button>
                     </div>
                     <div class="proscons__wrapper">
                         <div class="proscons__wrapper-item">
@@ -340,7 +361,6 @@
                         <span class="feedback__max">из 5.0</span>
                     </div>
                     </div>
-                    
                     <div class="like__wrapper">
                         <button class="like__wrapper-like">
                             <img src="assets/icon/like.svg" alt="like">
@@ -363,6 +383,14 @@
                         <br>
                         <br>
                         В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                    </div>
+                    <div class="like__wrapper like__wrapper-mobile">
+                        <button class="like__wrapper-like">
+                            <img src="assets/icon/like.svg" alt="like">
+                        </button>
+                        <button class="like__wrapper-dislike">
+                            <img src="assets/icon/Dislike.svg" alt="like">
+                        </button>
                     </div>
                     <div class="proscons__wrapper">
                         <div class="proscons__wrapper-item">
@@ -394,7 +422,6 @@
                     </div>
                     <a href="#" class="add-comment">Прокомментировать</a>
                 </div>
-                
             </div>
             <a href="#" class="more__reviews">Показать еще</a>
             <button class="btn__add-comment">ОСТАВИТЬ ОТЗЫВ</button>
@@ -407,7 +434,235 @@
                     <img src="assets/img/promocode.jpg" alt="promocode">
                 </div>
             </div>
+            <div class="divider"></div>
+
         </div>
     </section>
+    <section class="courses">
+        <div class="container">
+            <h2 class="courses__title title-fz28">Другие актуальные курсы</h2>
+            <div class="courses__wrapper">
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+                <div class="courses__wrapper-item">
+                    <h4 class="course__name">Курс UI/UX Дизайн от SkillFactory
+                    </h4>
+                    <div class="price__wrapper">
+                        <span class="price__wrapper-item">6 месяцев</span>
+                        <span class="price__wrapper-item-mounth">4 150 ₽ / мес</span>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#" class="more__info">Подробнее</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="recommendation__title title-fz28">Категории курсов которые вам могу быть интересны</h2>
+            <div class="all__courseswrapper">
+                <div class="all__courseswrapper-item course-active">Web-разработка</div>
+                <div class="all__courseswrapper-item course-active-stable">Мобильная разработка</div>
+                <div class="all__courseswrapper-item course-active">iOs разработка</div>
+                <div class="all__courseswrapper-item course-active">QA тестирование</div>
+                <div class="all__courseswrapper-item course-active">Разработка игр</div>
+                <div class="all__courseswrapper-item">Web-разработка</div>
+                <div class="all__courseswrapper-item">Мобильная разработка</div>
+                <div class="all__courseswrapper-item">iOs разработка</div>
+                <div class="all__courseswrapper-item">QA тестирование</div>
+                <div class="all__courseswrapper-item">Разработка игр</div>
+                <div class="all__courseswrapper-item ">Web-разработка</div>
+                <div class="all__courseswrapper-item">Мобильная разработка</div>
+                <div class="all__courseswrapper-item">iOs разработка</div>
+                <div class="all__courseswrapper-item">QA тестирование</div>
+                <div class="all__courseswrapper-item">Разработка игр</div>
+                <a href="#" class="all__categories">Все категории</a>
+            </div>
+            <div class="footer__wrapper">
+                <img src="assets/icon/footer-logo.svg" alt="logo" class="footer__wrapper-logo"></img>
+                <div class="footer__wrapper-socials">
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/telegramm.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/twitter.svg" alt="twitter">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/skype.svg" alt="skype">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/ok.svg" alt="ok">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/facebook.svg" alt="facebook">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/vk.svg" alt="vk">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/watsapp.svg" alt="watsapp">
+                        </a>
+                    </div>
+                    <div class="footer__socials-item">
+                        <a href="#">
+                            <img src="assets/icon/viber.svg" alt="viber">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__linkswrapper">
+                <div class="footer__linkswrapper-item">
+                    <ul>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы о школах</a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__linkswrapper-item" id="back">
+                    В Начало
+                    <img src="assets/icon/arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="policy__wrapper">
+                <div class="policy__wrapper-item">
+                    <span class="policy__wrapper-date">© 2021 coursator.online</span>
+                    <div class="policy__wrapper-terms">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
