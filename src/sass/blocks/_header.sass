@@ -1,8 +1,20 @@
 .header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-top: 21px
+    // display: flex
+    // justify-content: space-between
+    // align-items: center
+    // margin-top: 21px
+    // position: fixed
+    >nav
+        position: fixed
+        background: #ffff
+        z-index: 1000
+        width: 100%
+        top: 0
+        >div
+            >div
+                display: flex
+                justify-content: space-between
+                align-items: center
 .list__wrapper
     &-ul
         display: flex
@@ -38,6 +50,11 @@
     border: 1px solid #0075FF
     border-radius: 70px
     background-color: #ffff
+    display: flex
+    justify-content: center
+    align-items: center
+    >img
+        margin-left: 8px
 .logo
     font-family: 'Montserrat'
     font-style: normal
@@ -51,7 +68,7 @@
     >option
         background: #FFFFFF
 .path
-    margin-top: 40px
+    margin-top: 100px
     &__wrapper
         &-item
             font-family: 'Montserrat'
@@ -77,5 +94,62 @@
                 border-width: 0 3px 3px 0
                 &:nth-last-child(1)
                     display: none
-                    
+#language
+    width: 59px
+    height: 27px
+
+
+.menu
+    list-style-type: none
+    background: #FFFFFF
+    border-radius: 4px
+    position: absolute
+    opacity: 0
+    z-index: 5
+    display: none
+    padding: 5px
+    >li
+        cursor: pointer
+        &:hover
+            background: #FFFFFF
+.select
+    background: #EEEDEB
+    cursor: pointer
+    border-radius: 4px
+    display: flex
+    padding: 6px
+.selected-img
+    margin-right: 5px
+.caret
+    width: 0
+    height: 0
+.menu-active
+    background: #FFFFFF
+.menu-open
+    display: block
+    opacity: 1
+
+
+.hamburger
+    display: none
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 25px
+    >span
+        display: block
+        height: 2px
+        width: 100%
+        background-color: #000000
+        margin-bottom: 5px
+    &__active
+        >span
+            &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(-4px) rotate(45deg)
+                
                 

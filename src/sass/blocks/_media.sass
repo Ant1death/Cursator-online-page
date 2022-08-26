@@ -118,6 +118,18 @@
     .like
         &__wrapper
             // margin-top: 58px
+    .hamburger
+        display: block
+    .more
+        &__comments
+            &-item
+                grid-template-columns: 50px 596px
+    .modal
+        &__feedback
+            &-review
+                &-wrapper
+                    &-item
+                        width: 400px
 @media ( max-width: 992px )
     .container
         max-width: 720px
@@ -125,6 +137,8 @@
         padding: 41px 0
         &__card
             width: 260px
+        &__circle
+            right: -450px
     .btn-enroll
         width: 240px
     .card
@@ -206,6 +220,16 @@
                     font-size: 14px
     #after-study
         margin-top: 44px
+    .more
+        &__comments
+            &-item
+                grid-template-columns: 50px 396px
+    .modal
+        &__feedback
+            &-review
+                &-wrapper
+                    &-item
+                        width: 300px
 @media ( max-width: 768px )
     .reviews
         margin-top: 20px
@@ -218,6 +242,8 @@
             &-item
                 &:nth-last-child(1)
                     margin: 0 auto
+        &__circle
+            top: 600px
                     
         &__card
             width: 335px
@@ -350,6 +376,7 @@
         &__wrapper
             margin-top: 20px
     .footer
+        height: 950px
         &__wrapper
             flex-direction: column
             align-items: flex-start
@@ -373,8 +400,26 @@
                 flex-direction: column
                 >a
                     margin-top: 20px
-    .path
-        margin-top: 0px
+    .more
+        &__comments
+            &-item
+                grid-template-columns: 50px 216px
+    .modal
+        &__feedback
+            &-stars
+                &-wrapper
+                    flex-direction: column
+                &-item
+                    flex-direction: row
+                    align-items: center
+            &-star
+                &-wrapper
+                    margin-top: 0px
+                    margin-left: 5px
+            &-review
+                &-wrapper
+                    &-item
+                        width: 200px
 @media ( max-width: 576px )
     .like
         &__wrapper
@@ -386,6 +431,8 @@
         padding: 0 10px
     .promo
         padding: 20px 0
+        &__circle
+            top: 650px
     .duration
         &__item
             font-size: 14px
@@ -490,3 +537,57 @@
                     >li
                         >a
                             font-size: 14px
+    .modal
+        &__comment
+            &-submit
+                width: 100%
+    .more
+        &__comments
+            &-wrapper
+                // padding: 5px
+            &-item
+                grid-template-columns: 100%
+                grid-template-rows: 70px 100%
+            &-icon
+                margin: 0 auto
+    .fixed
+        &__block
+            &-wrapper
+                width: 100%
+            &-item
+                padding: 25px 30px 33px 20px
+                flex-direction: column
+            &-title
+                text-align: center
+    .btn-enroll-fixed
+        margin-top: 10px
+    .modal
+        &__feedback
+            &-item
+                padding: 20px
+            &-stars
+                &-wrapper
+                    
+                &-item
+                    flex-direction: row
+                    justify-content: space-between
+                    margin-top: 20px
+            &-star
+                &-wrapper
+                    margin-top: 0px
+                    margin-left: 5px
+            &-review
+                &-wrapper
+                    display: flex
+                    flex-direction: column
+                    &-item
+                        width: 200px
+                        margin-top: 20px
+    .btn__add-comment-submit
+        width: 260px
+@media ( max-width: 456px )
+        .footer
+            height: 1100px
+@media ( max-width: 341px )
+        .footer
+            height: 1200px

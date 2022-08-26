@@ -24,3 +24,37 @@ a
     font-size: 28px
     line-height: 34px
     color: #000000
+.fixed
+    &__block
+        &-wrapper
+            margin-top: 15px
+            position: fixed
+            bottom: 30px
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 1000
+            display: none
+        &-item
+            width: 100%
+            background: #E6F6F4
+            box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05)
+            border-radius: 20px
+            padding: 25px 30px 33px 40px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-title
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+        &-subtitle
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            color: #43C59E
+            margin-top: 10px

@@ -1,0 +1,174 @@
+.modal
+    &__comment
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1050
+        display: none
+        width: 100%
+        height: 100%
+        overflow: hidden
+        background-color: rgba(0,0,0,.5)
+        &-item
+            width: 100%
+            background: #FFFFFF
+            border: 1px solid #DCDCDC
+            border-radius: 20px
+            height: 495px
+            overflow-y: auto
+            position: relative
+            margin: 60px auto
+            padding: 40px 48px
+        &-close
+            position: absolute
+            right: 30px
+            top: 30px
+            width: 25px
+            height: 25px
+            cursor: pointer
+            background: none
+            border: none
+        &-title
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+        &-text
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+            margin-top: 18px
+            margin-bottom: 30px
+        &-form
+            display: flex
+            flex-direction: column
+        &-input
+            background: #FFFFFF
+            border: 1px solid #DCDCDC
+            border-radius: 9px
+            height: 62px
+            margin-bottom: 20px
+            padding: 19px 0 20px 28px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 142.5%
+            color: rgba(0, 0, 0, 0.33)
+        &-submit
+            background: #0075FF
+            border-radius: 10px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            border: none
+            height: 62px
+            width: 277px
+            margin: 0 auto
+            cursor: pointer
+.modal
+    &__feedback
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 1050
+        display: none
+        width: 100%
+        height: 100%
+        overflow: hidden
+        background-color: rgba(0,0,0,.5)
+        &-item
+            width: 100%
+            height: 800px
+            background: #FFFFFF
+            border: 1px solid #DCDCDC
+            border-radius: 20px
+            overflow-y: auto
+            position: relative
+            margin: 60px auto
+            padding: 40px 48px
+        &-title
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+        &-text
+            margin-top: 18px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+        &-input
+            background: #FFFFFF
+            border: 1px solid #DCDCDC
+            border-radius: 9px
+            width: 100%
+            height: 62px
+            margin-top: 20px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 142.5%
+            color: rgba(0, 0, 0, 0.33)
+            padding: 20px 0 20px 20px
+        &-close
+            position: absolute
+            right: 30px
+            top: 30px
+            width: 25px
+            height: 25px
+            cursor: pointer
+            background: none
+            border: none
+        &-stars
+            &-wrapper
+                margin-top: 30px
+                display: flex
+                justify-content: space-between
+            &-item
+                display: flex
+                flex-direction: column
+                &-icon
+                    margin-right: 7px
+                    &:nth-last-child(1)
+                        margin-right: 0
+                        
+        &-star
+            &-wrapper
+                margin-top: 10px
+                display: flex
+                justify-content: space-between
+        &-review
+            &-wrapper
+                margin-top: 36px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &-item
+                    width: 500px
+                    height: 120px
+                    background: #FFFFFF
+                    border: 1px solid #DCDCDC
+                    border-radius: 9px
+                    padding: 19px 0 78px 28px
+.btn__add-comment-submit
+    margin-top: 20px
+.show
+    display: block
+.hide
+    display: none

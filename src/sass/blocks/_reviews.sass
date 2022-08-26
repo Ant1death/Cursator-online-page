@@ -4,7 +4,7 @@
         margin-bottom: 30px
 .feedback
     width: 1170px
-    height: 452px
+    min-height: 452px
     background: #FFFFFF
     border: 1px solid #DCDCDC
     border-radius: 20px
@@ -67,6 +67,26 @@
         border-radius: 7px
         border: none
         cursor: pointer
+        position: relative
+        &:hover
+            background: #43c59e
+        &::after
+            display: block
+            content: '4'
+            position: absolute
+            background: #DFDFDF
+            width: 14px
+            height: 14px
+            top: 0
+            right: 0
+            border-radius: 100%
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 8px
+            line-height: 152.9%
+            color: #000000
+        
     &-dislike
         width: 45px
         height: 45px
@@ -74,6 +94,8 @@
         border-radius: 7px
         border: none
         cursor: pointer
+        &:hover
+            background: #eb236b
 .user
     &__container
         display: flex
@@ -115,7 +137,7 @@
         line-height: 152.9%
         color: #000000
         position: relative
-        >a
+        >div
             position: absolute
             font-family: 'Montserrat'
             font-style: normal
@@ -126,6 +148,7 @@
             text-decoration-line: underline
             color: #0075FF
             right: 0
+            cursor: pointer
 .proscons__wrapper
     margin-top: 46px
     display: flex
@@ -169,7 +192,8 @@
     text-decoration-line: underline
     color: #0075FF
     position: absolute
-    bottom: 0
+    bottom: -15px
+    cursor: pointer
 .more__reviews
     float: right
     font-family: 'Montserrat'
@@ -180,6 +204,8 @@
     text-align: right
     text-decoration-line: underline
     color: #0075FF
+    &:hover
+        transform: scale(1.05)
 .btn__add-comment
     display: block
     margin: 0 auto
@@ -241,6 +267,9 @@
         color: #FFFFFF
         border: none
         margin-top: 42px
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
 .white-circle
     overflow: hidden
     position: absolute
@@ -255,3 +284,95 @@
         position: absolute
         right: 140px
         top: 60px
+.more
+    display: none
+.open
+    &__review
+        display: none
+.open-active
+    display: block
+.close-active
+    display: block
+.more
+    &__comments
+        &-content
+            
+        &-wrapper
+            background: #F7F7F7
+            min-height: 47px
+            padding: 15px 0 20px 20px
+            margin-top: 10px
+            margin-bottom: 10px
+            
+        &-item
+            background: #F7F7F7
+            border-radius: 0px 0px 20px 0px
+            padding: 21px 30px 30px 30px
+            display: grid
+            grid-template-columns: 50px 852px
+            column-gap: 10px
+            min-height: 223px
+            position: relative
+            display: none
+        &-icon
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            border-radius: 100px
+            background: linear-gradient(0deg, #ECECEC, #ECECEC), url(222.jpg)
+            >img
+                width: 17px
+                height: 17px      
+        &-name
+            display: flex
+            justify-content: space-between
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+        &-text
+            margin-top: 10px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+        &-date
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            text-align: right
+            color: #263238
+        &-close
+            position: absolute
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            text-decoration-line: underline
+            color: #000000
+            right: 10px
+            bottom: 10px
+            cursor: pointer
+        &-open
+            display: none
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            text-decoration-line: underline
+            color: #000000
+            cursor: pointer
+            >img
+                margin-right: 10px
+.comments-open-active
+    display: block

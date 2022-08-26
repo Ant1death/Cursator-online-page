@@ -9,30 +9,45 @@
 </head>
 <body>
     <header>
+        <div class="header">
+            <nav>
+                <div class="container">
+                    <div>
+                        <div class="logo">coursator.online</div>
+                        <div class="list__wrapper">
+                            <ul class="list__wrapper-ul">
+                                    <button class="list__wrapper-item btn-course">Все курсы
+                                        <img src="assets/icon/arrow-btn.svg" alt="arrow">
+                                    </button>
+                                    <li class="list__wrapper-item"><a href="#">Тест на профессию</a> </li>
+                                    <li class="list__wrapper-item"><a href="#">Акции</a> </li>
+                                    <li class="list__wrapper-item"><a href="#">Отзывы</a> </li>
+                                    <li class="list__wrapper-item"><a href="#">Блог</a> </li>
+                                <div class="list__wrapper-item dropdown"id="language">
+                                        <div class="select">
+                                            <img src="assets/icon/en-flag.svg" class="selected-img">
+                                            <span class="selected">EN</span>
+                                            <div class="caret"></div>
+                                        </div>
+                                        <ul class="menu">
+                                            <li><img src="assets/icon/ru-flag.svg" > RU </li>
+                                            <li><img src="assets/icon/en-flag.svg" > EN </li>
+                                        </ul>
+                                </div>
+                            </ul>
+                            
+                        </div>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            
         <div class="container">
-            <div class="header">
-                <div class="logo">coursator.online</div>
-                <div class="list__wrapper">
-                    <nav>
-                        <ul class="list__wrapper-ul">
-                            <button class="list__wrapper-item btn-course">Все курсы</button>
-                            <li class="list__wrapper-item"><a href="#">Тест на профессию</a> </li>
-                            <li class="list__wrapper-item"><a href="#">Акции</a> </li>
-                            <li class="list__wrapper-item"><a href="#">Отзывы</a> </li>
-                            <li class="list__wrapper-item"><a href="#">Блог</a> </li>
-                            <li class="list__wrapper-item" id="language">
-                                <a href="#">RU</a> 
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                
-            </div>
             <div class="path">
                 <div class="path__wrapper">
                     <a href="#" class="path__wrapper-item">Главная</a>
@@ -42,6 +57,8 @@
                         на JavaScript от SkillFactory</a>
                 </div>
             </div>
+        </div>
+            
         </div>
         
     </header>
@@ -118,7 +135,7 @@
                 
             </div>
         </div>
-        <!-- <div class="promo__circle"></div> -->
+        <div class="promo__circle"></div>
     </section>
     <section class="about">
         <div class="navigation__btnwrapper">
@@ -232,7 +249,13 @@
                         В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
                         <br>
                         <br>
-                        В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                        В некотором унынии я провел пару месяцев и не учился... <div class="open__review open-active">Развернуть отзыв</div>
+                    </div>
+                    <div class="user__text more">
+                        В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                        <br>
+                        <br>
+                        В некотором унынии я провел пару месяцев и не учился... <div  class="close__review close-active">Свернуть</div>
                     </div>
                     <div class="like__wrapper like__wrapper-mobile">
                         <button class="like__wrapper-like">
@@ -270,7 +293,33 @@
                             
                         </div>
                     </div>
-                    <a href="#" class="add-comment">Прокомментировать</a>
+                    <div class="more__comments-wrapper">
+                        <div class="more__comments-open comments-open-active"> <img src="assets/icon/more-comment-arrow.svg" alt="arrow"> 1 комментарий</div>
+                        <div class="more__comments-content">
+                            <div class="more__comments-item">
+                                <div class="more__comments-icon">
+                                    <img src="assets/icon/user.svg" alt="user">
+                                </div>
+                                <div class="more__comments-main">
+                                    <div class="more__comments-name">
+                                        Георгий
+                                        <div class="more__comments-date">
+                                            24.04.2022
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="more__comments-text">В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                                        <br>
+                                        <br>
+                                        В некотором унынии я провел пару месяцев и не учился...
+                                    </div>
+                                </div>
+                                
+                                <div class="more__comments-close comments-close-active">Скрыть комментарии</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-comment">Прокомментировать</div>
                 </div>
                 
             </div>
@@ -307,7 +356,13 @@
                         В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
                         <br>
                         <br>
-                        В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                        В некотором унынии я провел пару месяцев и не учился... <div  class="open__review open-active">Развернуть отзыв</div>
+                    </div>
+                    <div class="user__text more">
+                        В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                        <br>
+                        <br>
+                        В некотором унынии я провел пару месяцев и не учился... <div  class="close__review close-active">Свернуть</div>
                     </div>
                     <div class="like__wrapper like__wrapper-mobile">
                         <button class="like__wrapper-like">
@@ -345,7 +400,33 @@
                             
                         </div>
                     </div>
-                    <a href="#" class="add-comment">Прокомментировать</a>
+                    <div class="more__comments-wrapper">
+                        <div class="more__comments-open comments-open-active"> <img src="assets/icon/more-comment-arrow.svg" alt="arrow"> 1 комментарий</div>
+                        <div class="more__comments-content">
+                            <div class="more__comments-item">
+                                <div class="more__comments-icon">
+                                    <img src="assets/icon/user.svg" alt="user">
+                                </div>
+                                <div class="more__comments-main">
+                                    <div class="more__comments-name">
+                                        Георгий
+                                        <div class="more__comments-date">
+                                            24.04.2022
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="more__comments-text">В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                                        <br>
+                                        <br>
+                                        В некотором унынии я провел пару месяцев и не учился...
+                                    </div>
+                                </div>
+                                
+                                <div class="more__comments-close comments-close-active">Скрыть комментарии</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-comment">Прокомментировать</div>
                 </div>
                 
             </div>
@@ -382,7 +463,13 @@
                         В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
                         <br>
                         <br>
-                        В некотором унынии я провел пару месяцев и не учился... <a href="#">Развернуть отзыв</a>
+                        В некотором унынии я провел пару месяцев и не учился... <div  class="open__review open-active">Развернуть отзыв</div>
+                    </div>
+                    <div class="user__text more">
+                        В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                        <br>
+                        <br>
+                        В некотором унынии я провел пару месяцев и не учился... <div  class="close__review close-active">Свернуть</div>
                     </div>
                     <div class="like__wrapper like__wrapper-mobile">
                         <button class="like__wrapper-like">
@@ -420,7 +507,33 @@
                             
                         </div>
                     </div>
-                    <a href="#" class="add-comment">Прокомментировать</a>
+                    <div class="more__comments-wrapper">
+                        <div class="more__comments-open comments-open-active"> <img src="assets/icon/more-comment-arrow.svg" alt="arrow"> 1 комментарий</div>
+                        <div class="more__comments-content">
+                            <div class="more__comments-item">
+                                <div class="more__comments-icon">
+                                    <img src="assets/icon/user.svg" alt="user">
+                                </div>
+                                <div class="more__comments-main">
+                                    <div class="more__comments-name">
+                                        Георгий
+                                        <div class="more__comments-date">
+                                            24.04.2022
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="more__comments-text">В SkillFactory шел с четкой целью — хочу стать айтишником. С самого начала я очень усердно занимался и даже шел впереди основного графика. Сложность модулей со временем нарастала, а вот мое усердие поослабло. Меня начали терзать сомнения насчет того, не погорячился ли я с покупкой всего курса целиком.
+                                        <br>
+                                        <br>
+                                        В некотором унынии я провел пару месяцев и не учился...
+                                    </div>
+                                </div>
+                                
+                                <div class="more__comments-close comments-close-active">Скрыть комментарии</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-comment">Прокомментировать</div>
                 </div>
             </div>
             <a href="#" class="more__reviews">Показать еще</a>
@@ -571,11 +684,11 @@
         <div class="container">
             <h2 class="recommendation__title title-fz28">Категории курсов которые вам могу быть интересны</h2>
             <div class="all__courseswrapper">
-                <div class="all__courseswrapper-item course-active">Web-разработка</div>
-                <div class="all__courseswrapper-item course-active-stable">Мобильная разработка</div>
-                <div class="all__courseswrapper-item course-active">iOs разработка</div>
-                <div class="all__courseswrapper-item course-active">QA тестирование</div>
-                <div class="all__courseswrapper-item course-active">Разработка игр</div>
+                <div class="all__courseswrapper-item course-active course-active-stable">Web-разработка</div>
+                <div class="all__courseswrapper-item course-active course-active-stable">Мобильная разработка</div>
+                <div class="all__courseswrapper-item course-active course-active-stable">iOs разработка</div>
+                <div class="all__courseswrapper-item course-active course-active-stable">QA тестирование</div>
+                <div class="all__courseswrapper-item course-active course-active-stable">Разработка игр</div>
                 <div class="all__courseswrapper-item">Web-разработка</div>
                 <div class="all__courseswrapper-item">Мобильная разработка</div>
                 <div class="all__courseswrapper-item">iOs разработка</div>
@@ -586,7 +699,8 @@
                 <div class="all__courseswrapper-item">iOs разработка</div>
                 <div class="all__courseswrapper-item">QA тестирование</div>
                 <div class="all__courseswrapper-item">Разработка игр</div>
-                <a href="#" class="all__categories">Все категории</a>
+                <div href="#" class="all__categories">Все категории</div>
+                <div class="all__categories-close">Скрыть</div>
             </div>
             <div class="footer__wrapper">
                 <img src="assets/icon/footer-logo.svg" alt="logo" class="footer__wrapper-logo"></img>
@@ -664,5 +778,153 @@
             </div>
         </div>
     </footer>
+    <div class="modal__comment hide">
+        <div class="container">
+            <div class="modal__dialog">
+                <div class="modal__comment-item">
+                    <div class="modal__comment-title">Оставить комментарий</div>
+                    <div class="modal__comment-text">Ваш адрес email не будет опубликован. Обязательные поля помечены *</div>
+                    <button class="modal__comment-close">
+                        <img src="assets/icon/exit-modal.svg" alt="exit">
+                    </button>
+                    
+                    <form action="" class="modal__comment-form">
+                        <input type="text" class="modal__comment-input" placeholder="Комментарий">
+                        <input type="text" class="modal__comment-input" placeholder="Имя *">
+                        <input type="text" class="modal__comment-input" placeholder="Email *">
+                        <button class="modal__comment-submit">ОСТАВИТЬ комментарий</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__feedback hide">
+        <div class="container">
+            <div class="modal__dialog">
+                <div class="modal__feedback-item">
+                    <div class="modal__feedback-title">Оставить отзыв</div>
+                    <div class="modal__feedback-text">Ваш адрес email не будет опубликован. Обязательные поля помечены *</div>
+                    <button class="modal__feedback-close">
+                        <img src="assets/icon/exit-modal.svg" alt="exit">
+                    </button>
+                    <form class="modal__feedback-form">
+                        <div class="modal__feedback-main-wrapper">
+                            <input type="text" class="modal__feedback-input"placeholder='Название курса *'>
+                            <input type="text" class="modal__feedback-input"placeholder='Комментарий'>
+                            <input type="text" class="modal__feedback-input"placeholder='Имя *'>
+                            <input type="text" class="modal__feedback-input"placeholder='Email *'>
+                        </div>
+                        <div class="modal__feedback-stars-wrapper">
+                            <div class="modal__feedback-stars-item">
+                                <div class="modal__feedback-stars-item-title">Стоимость *</div>
+                                <div class="modal__feedback-star-wrapper">
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__feedback-stars-item">
+                                <div class="modal__feedback-stars-item-title">Подача материала *</div>
+                                <div class="modal__feedback-star-wrapper">
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__feedback-stars-item">
+                                <div class="modal__feedback-stars-item-title">Программа обучения *</div>
+                                <div class="modal__feedback-star-wrapper">
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__feedback-stars-item">
+                                <div class="modal__feedback-stars-item-title">Уровень организации *</div>
+                                <div class="modal__feedback-star-wrapper">
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                    <div class="modal__feedback-stars-item-icon">
+                                        <img src="assets/icon/star-form.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="modal__feedback-review-wrapper">
+                            <input type="text" class="modal__feedback-review-wrapper-item"
+                            placeholder="Плюсы">
+
+                            <input type="text" class="modal__feedback-review-wrapper-item"
+                            placeholder="Минусы">
+
+                        </div>
+                        <button class="btn__add-comment btn__add-comment-submit">ОСТАВИТЬ ОТЗЫВ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed__block-wrapper">
+        <div class="container">
+            <div class="fixed__block-item">
+                <div class="fixed__block-title">
+                    Профессия Fullstack-разработчик
+                    <br>
+                    на JavaScript от SkillFactory
+                    <div class="fixed__block-subtitle">98 150 ₽ / курс</div>
+                </div>  
+                <button class="btn btn-enroll btn-enroll-fixed">записаться на курс</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

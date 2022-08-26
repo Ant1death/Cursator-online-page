@@ -21,6 +21,9 @@
         width: 793px
         height: 794px
         border-radius: 100%
+        top: -50px
+        right: -300px
+        z-index: -1
 .duration__item
     font-family: 'Montserrat'
     font-style: normal
@@ -55,6 +58,8 @@
     &:nth-last-child(3)
         margin-right: 0
         width: 194px
+    &:hover
+        background: rgba(67, 197, 158, 0.5)
     >a
         text-decoration: none
         color: #43C59E
@@ -118,6 +123,9 @@
         opacity: 0.35
         text-align: center
         margin-top: 7px
+        >a
+        &:hover
+            transform: scale(1.1)
     &__price
         display: flex
         align-items: center
@@ -189,3 +197,5 @@
     text-align: center
     text-transform: uppercase
     color: #FFFFFF
+    &:hover
+        transform: scale(1.1)
