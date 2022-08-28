@@ -5,48 +5,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/header.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    
 </head>
 <body>
-    <header>
-        <div class="header">
-            <nav>
-                <div class="container">
-                    <div>
-                        <div class="logo">coursator.online</div>
-                        <div class="list__wrapper">
-                            <ul class="list__wrapper-ul">
-                                    <button class="list__wrapper-item btn-course">Все курсы
-                                        <img src="assets/icon/arrow-btn.svg" alt="arrow">
-                                    </button>
-                                    <li class="list__wrapper-item"><a href="#">Тест на профессию</a> </li>
-                                    <li class="list__wrapper-item"><a href="#">Акции</a> </li>
-                                    <li class="list__wrapper-item"><a href="#">Отзывы</a> </li>
-                                    <li class="list__wrapper-item"><a href="#">Блог</a> </li>
-                                <div class="list__wrapper-item dropdown"id="language">
-                                        <div class="select">
-                                            <img src="assets/icon/en-flag.svg" class="selected-img">
-                                            <span class="selected">EN</span>
-                                            <div class="caret"></div>
-                                        </div>
-                                        <ul class="menu">
-                                            <li><img src="assets/icon/ru-flag.svg" > RU </li>
-                                            <li><img src="assets/icon/en-flag.svg" > EN </li>
-                                        </ul>
-                                </div>
-                            </ul>
-                            
-                        </div>
-                        <div class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+    
+    <header class="header">
+        <div class="container d-f ai-c">
+          <a class="header__logo d-f ai-c" href="#"><img class="header__logo-img" src="assets/icon/logo.svg" alt="" /></a>
+          <nav class="header-nav d-f ai-c" data-evnt-hdr-nv="">
+            <div class="header__links d-f">
+              <a class="header__links-element hvr-lnk" href="#">Тест на профессию</a><a class="header__links-element hvr-lnk" href="#">Акции</a
+              ><a class="header__links-element hvr-lnk" href="#">Отзывы</a>
+            </div>
+            <div class="header__button" data-evnt-hdr-btn="">
+              <button class="header__button-head d-f ai-c" data-evnt-hdr-btn-elmnt="">
+                <span class="header__button-head-text">Все курсы</span
+                ><img class="header__button-head-icon icon-size" src="assets/icon/arrow-btn.svg" alt="" loading="lazy" />
+              </button>
+              <div class="header__button-modal d-f" data-evnt-hdr-btn-mdl="">
+                <div class="header__button-modal-left" data-evnt-hdr-btn-mdl-innr="">
+                  <button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="1">
+                    <span class="header__button-modal-button-text">Программирование</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="2">
+                    <span class="header__button-modal-button-text">Управление</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="3">
+                    <span class="header__button-modal-button-text">Дизайн</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="4">
+                    <span class="header__button-modal-button-text">Маркетинг</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="5">
+                    <span class="header__button-modal-button-text">Аналитика</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="6">
+                    <span class="header__button-modal-button-text">Создание контента</span
+                    ><svg
+                      class="header__button-modal-button-icon"
+                      width="5"
+                      height="8"
+                      viewBox="0 0 5 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg>
+                  </button>
                 </div>
-            </nav>
-            
-            
+                <div class="header__button-modal-right" data-number-modal="1">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 1</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="2">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 2</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="3">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 3</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="4">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 4</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="5">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 5</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="6">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 6</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <button class="burger flex-column jc-sb" data-evnt-brgr="">
+            <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"> </span>
+          </button>
+        </div>
+      </header>
+      <button class="button-up d-f ai-c hvr-lnk" data-event-ftr-up="">
+        <span class="button-up__text">В начало</span><img class="button-up__icon icon-size" src="assets/icon/arrow.svg" alt="" loading="lazy" />
+      </button>
+      <div class="path-container">
         <div class="container">
             <div class="path">
                 <div class="path__wrapper">
@@ -65,10 +310,8 @@
                 </div>
             </div>
         </div>
-            
-        </div>
-        
-    </header>
+      </div>
+      
     <section class="promo">
         <div class="container">
             <div class="promo__wrapper">
@@ -79,7 +322,7 @@
                     <button class="subcategories__item">
                         <a href="#">Программирование</a>
                     </button>
-                    <button class="subcategories__item">
+                    <button class="subcategories__item" id="subcategories__item2">
                         <a href="#">Java-разработка</a>
                     </button>
                     <button class="subcategories__item">
@@ -687,104 +930,71 @@
             
         </div>
     </section>
-    <footer class="footer">
+    <section class="categories">
         <div class="container">
             <h2 class="recommendation__title title-fz28">Категории курсов которые вам могу быть интересны</h2>
             <div class="all__courseswrapper">
-                <div class="all__courseswrapper-item course-active course-active-stable">Web-разработка</div>
-                <div class="all__courseswrapper-item course-active course-active-stable">Мобильная разработка</div>
-                <div class="all__courseswrapper-item course-active course-active-stable">iOs разработка</div>
-                <div class="all__courseswrapper-item course-active course-active-stable">QA тестирование</div>
-                <div class="all__courseswrapper-item course-active course-active-stable">Разработка игр</div>
-                <div class="all__courseswrapper-item">Web-разработка</div>
-                <div class="all__courseswrapper-item">Мобильная разработка</div>
-                <div class="all__courseswrapper-item">iOs разработка</div>
-                <div class="all__courseswrapper-item">QA тестирование</div>
-                <div class="all__courseswrapper-item">Разработка игр</div>
-                <div class="all__courseswrapper-item ">Web-разработка</div>
-                <div class="all__courseswrapper-item">Мобильная разработка</div>
-                <div class="all__courseswrapper-item">iOs разработка</div>
-                <div class="all__courseswrapper-item">QA тестирование</div>
-                <div class="all__courseswrapper-item">Разработка игр</div>
-                <div href="#" class="all__categories">Все категории</div>
+                <div class="all__courseswrapper-item course-active course-active-stable"><a href="#">Web-разработка</a> </div>
+                <div class="all__courseswrapper-item course-active course-active-stable"><a href="#">Мобильная разработка</a> </div>
+                <div class="all__courseswrapper-item course-active course-active-stable"><a href="#">iOs разработка</a> </div>
+                <div class="all__courseswrapper-item course-active course-active-stable"><a href="#">QA тестирование</a> </div>
+                <div class="all__courseswrapper-item course-active course-active-stable"><a href="#">Разработка игр</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">Java-разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">Системное администрирование</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">Android разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">IOS разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">Разработка на Unity</a> </div>
+                <div class="all__courseswrapper-item "><a href="#">Разработка на C#</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">Golang-разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">VR/AR разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">1C-разработка</a> </div>
+                <div class="all__courseswrapper-item"><a href="#">ООП</a> </div>
+                <div href="#" class="all__categories">Все категории </div>
                 <div class="all__categories-close">Скрыть</div>
             </div>
-            <div class="footer__wrapper">
-                <img src="assets/icon/footer-logo.svg" alt="logo" class="footer__wrapper-logo"></img>
-                <div class="footer__wrapper-socials">
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/telegramm.svg" alt="telegram">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/twitter.svg" alt="twitter">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/skype.svg" alt="skype">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/ok.svg" alt="ok">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/facebook.svg" alt="facebook">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/vk.svg" alt="vk">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/watsapp.svg" alt="watsapp">
-                        </a>
-                    </div>
-                    <div class="footer__socials-item">
-                        <a href="#">
-                            <img src="assets/icon/viber.svg" alt="viber">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__linkswrapper">
-                <div class="footer__linkswrapper-item">
-                    <ul>
-                        <li>
-                            <a href="#">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                        <li>
-                            <a href="#">Отзывы о школах</a> 
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__linkswrapper-item" id="back">
-                    В Начало
-                    <img src="assets/icon/arrow.svg" alt="arrow">
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="policy__wrapper">
-                <div class="policy__wrapper-item">
-                    <span class="policy__wrapper-date">© 2021 coursator.online</span>
-                    <div class="policy__wrapper-terms">
-                        <a href="#">Политика конфиденциальности</a>
-                        <a href="#">Пользовательское соглашение</a>
-                    </div>
-                </div>
-            </div>
         </div>
+    </section>
+    <section class="contacts mt-tp-2">
+        <div class="contacts__container container grid jc-sb ai-c">
+          <a class="contacts__logo" href="#"><img class="contacts__logo-img" src="assets/icon/footer-logo.svg" alt="" loading="lazy" /></a>
+          <div class="contacts__links grid">
+            <a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/telegramm.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/twitter.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/skype.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/ok.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/facebook.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/vk.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/watsapp.svg" alt="" loading="lazy" /></a
+            ><a class="contacts__links-element" href="#"
+              ><img class="contacts__links-element-icon" src="assets/icon/viber.svg" alt="" loading="lazy"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer mt-tp-5">
+      <div class="container">
+        <div class="footer__links grid">
+          <a class="footer__link hvr-lnk" href="#">О нас</a><a class="footer__link hvr-lnk" href="#">Контакты</a
+          ><a class="footer__link hvr-lnk" href="#">Отзывы о школах</a>
+        </div>
+        <div class="footer__bottom d-f ai-c">
+          <div class="footer__cop">© 2021 coursator.online</div>
+          <div class="footer__bottom-links d-f">
+            <a class="footer__bottom-link hvr-lnk" href="#">Политика конфиденциальности</a
+            ><a class="footer__bottom-link hvr-lnk" href="#">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
     </footer>
+    
     <div class="modal__comment hide">
         <div class="container">
             <div class="modal__dialog">
@@ -919,7 +1129,7 @@
         </div>
     </div>
     <div class="fixed__block-wrapper">
-        <div class="container">
+        <div class="container" id="conteiner__fixed">
             <div class="fixed__block-item">
                 <div class="fixed__block-title">
                     Профессия Fullstack-разработчик

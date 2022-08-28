@@ -244,7 +244,19 @@ window.addEventListener('DOMContentLoaded', () => {
     modalContent.classList.remove('show');
     modalContent.classList.add('hide');
     document.body.style.overflow = 'auto';
+  }); // return arrow
+
+  const returnBtn = document.querySelector('.button-up');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset >= 1000) {
+      returnBtn.classList.add('active');
+    }
+
+    if (window.pageYOffset < 1000) {
+      returnBtn.classList.remove('active');
+    }
   });
+  returnBtn.addEventListener('click', () => {});
 });
 
 /***/ })

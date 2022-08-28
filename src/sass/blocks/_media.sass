@@ -1,7 +1,14 @@
 @media ( max-width: 1439px )
     .sidepanel
         display: none
+    .modal
+        &__feedback
+            &-item
+                height: 700px
 @media ( max-width: 1200px )
+    .button
+        &-up
+            bottom: 100px
     .container
         max-width: 920px
     .title
@@ -98,6 +105,8 @@
     .btn
         &__add-comment
             margin-top: 72px
+            &-submit
+                margin-top: 30px
     .all__courseswrapper
         justify-content: flex-start
         &-item
@@ -126,10 +135,13 @@
                 grid-template-columns: 50px 596px
     .modal
         &__feedback
+            &-item
+                height: 700px
             &-review
                 &-wrapper
                     &-item
                         width: 400px
+
 @media ( max-width: 992px )
     .container
         max-width: 720px
@@ -152,7 +164,7 @@
                     margin-right: 7px
     .bonuses
         &__item
-            width: 100%
+            width: 190px
             >div
                 >br
                     display: none
@@ -226,10 +238,32 @@
                 grid-template-columns: 50px 396px
     .modal
         &__feedback
+            &-item
+                height: 600px
             &-review
                 &-wrapper
                     &-item
                         width: 300px
+            &-star
+                &-wrapper
+                    max-width: 130px
+                    margin-top: 0px
+            &-stars
+                &-wrapper
+                    flex-direction: column
+                &-item
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-between
+                    margin-top: 20px
+                    &-title
+                        margin-right: 10px
+
+@media ( max-width: 834px )
+    .bonuses
+        &__item
+            width: 190px
+    
 @media ( max-width: 768px )
     .reviews
         margin-top: 20px
@@ -376,7 +410,7 @@
         &__wrapper
             margin-top: 20px
     .footer
-        height: 950px
+        height: 300px
         &__wrapper
             flex-direction: column
             align-items: flex-start
@@ -406,10 +440,13 @@
                 grid-template-columns: 50px 216px
     .modal
         &__feedback
+            &-item
+                height: 600px
             &-stars
                 &-wrapper
                     flex-direction: column
                 &-item
+                    
                     flex-direction: row
                     align-items: center
             &-star
@@ -420,7 +457,34 @@
                 &-wrapper
                     &-item
                         width: 200px
+    .bonuses
+        &__item
+            width: 100%
+    .fixed__block-wrapper
+            bottom: 0
+            width: 100%
+    .fixed__block-title
+        font-size: 12px
+        line-height: 15px
+        text-align: left
+
+    .fixed__block-subtitle
+        font-size: 12px
+        line-height: 15px
+    .fixed__block-item
+        padding: 12px 10px 12px 15px
+        flex-direction: row
+    .btn-enroll-fixed
+            width: 200px
+            height: 34px
+            font-size: 12px
+            line-height: 15px
+            padding: 0px 10px
+    #conteiner__fixed
+        width: 100%
+        padding: 0
 @media ( max-width: 576px )
+    
     .like
         &__wrapper
             // display: none
@@ -444,8 +508,10 @@
             width: 300px
     .subcategories
         &__item
-            margin-top: 20px
+            margin-top: 10px
             &:nth-last-child(3)
+                margin-top: 10px
+            &:nth-child(3)
                 margin-top: 20px
     .subtitle
         &__item
@@ -550,17 +616,8 @@
                 grid-template-rows: 70px 100%
             &-icon
                 margin: 0 auto
-    .fixed
-        &__block
-            &-wrapper
-                width: 100%
-            &-item
-                padding: 25px 30px 33px 20px
-                flex-direction: column
-            &-title
-                text-align: center
     .btn-enroll-fixed
-        margin-top: 10px
+        width: 200px
     .modal
         &__feedback
             &-item
@@ -587,7 +644,43 @@
         width: 260px
 @media ( max-width: 456px )
         .footer
-            height: 1100px
+            height: 300px
+        .subcategories
+            &__item
+                margin-right: 10px
+                font-size: 12px
+                line-height: 15px
+                &:nth-last-child(3)
+                    
+                    margin-right: 0
+                    width: 155px
+                &:nth-child(3)
+                    margin-top: 20px
+                    width: 171px
+        #subcategories__item2
+            width: 142px
+        .fixed__block-wrapper
+            bottom: -10px
+        .fixed__block-title
+            font-size: 12px
+            line-height: 15px
+            text-align: left
+
+        .fixed__block-subtitle
+            font-size: 12px
+            line-height: 15px
+        .fixed__block-item
+            padding: 12px 10px 12px 15px
+            flex-direction: row
+        .btn-enroll-fixed
+            width: 110px
+            height: 34px
+            font-size: 12px
+            line-height: 15px
+            padding: 0px 10px
+        #conteiner__fixed
+            width: 100%
+            padding: 0
 @media ( max-width: 341px )
         .footer
-            height: 1200px
+            height: 350px
