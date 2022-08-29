@@ -194,7 +194,10 @@ window.addEventListener('DOMContentLoaded', () => {
         
     });
     const allCoursHeaderLeftBtns = document.querySelectorAll('.header__button-modal-button'),
-          allCoursHeaderContentBtns = document.querySelectorAll('.header__button-modal-right');
+          allCoursHeaderContentBtns = document.querySelectorAll('.header__button-modal-right'),
+          allCoursHeaderLeftWrapperBtns = document.querySelector('.header__button-modal-left'),
+          allCoursHeaderReturnBtn = document.querySelectorAll('.header__button-modal-right-back-text');
+
 
         
         
@@ -207,18 +210,25 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.classList.remove('active');
                 item.style.height = '0px';
             })
-            
+            allCoursHeaderLeftWrapperBtns.classList.remove('active');
         }
         function leftMenuOpen(i=0) {
             allCoursHeaderLeftBtns[i].classList.add('active');
             allCoursHeaderContentBtns[i].classList.add('active');
             allCoursHeaderContentBtns[i].style.height = '700px';
+            allCoursHeaderLeftWrapperBtns.classList.add('active');
             // allCoursHeaderNav[i].style.height == '700px'
         }
         allCoursHeaderLeftBtns.forEach((item, i) => {
             item.addEventListener('click', () => {
                 leftMenuClose()
                 leftMenuOpen(i)
+            })
+        })
+        allCoursHeaderReturnBtn.forEach((item,i) => {
+            item.addEventListener('click', () => {
+                leftMenuClose()
+                
             })
         })
 })
