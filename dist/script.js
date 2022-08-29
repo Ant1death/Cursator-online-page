@@ -268,7 +268,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const target = e.target;
 
     if (target.classList.contains('header__button-head') || target.classList.contains('header__button-head-text')) {
+      let i = 0;
       allCoursHeaderBtn.classList.toggle('active');
+      allCoursHeaderLeftBtns[i].classList.add('active');
+      allCoursHeaderContentBtns[i].classList.add('active');
+      allCoursHeaderContentBtns[i].style.height = '700px';
+      allCoursHeaderLeftWrapperBtns.classList.add('active');
     }
   });
   const allCoursHeaderLeftBtns = document.querySelectorAll('.header__button-modal-button'),
